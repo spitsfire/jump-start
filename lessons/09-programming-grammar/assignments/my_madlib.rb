@@ -8,13 +8,13 @@ def get_words(answer)
   if answer == "y"
     puts "This madlib requires 17 words.\nFirst, pick a noun: "
     noun1 = gets.chomp.downcase
-    puts "Pick a character you roleplay: "
+    puts "Pick a name for your hero: "
     char = gets.chomp
-    puts "Pick an emotion (past tense): "
-    emo = gets.chomp.downcase
+    puts "Pick a verb (present tense): "
+    verb2 = gets.chomp.downcase
     puts "Pick a place (real or fictional): "
     place2 = gets.chomp
-    puts "Now pick another character. One you don't play: "
+    puts "Now pick a name for #{char}'s sidekick: "
     cr = gets.chomp
     puts "Pick another noun: "
     noun2 = gets.chomp.downcase
@@ -38,7 +38,7 @@ def get_words(answer)
     year = gets.chomp.to_i
     puts "Lastly, pick another adjective: "
     adj3 = gets.chomp.downcase
-    puts "Once upon a #{noun1}, there was a #{adj1} and #{adj2} #{noun2} named #{char}. All across the #{place1}, #{char} #{verb1} with great renown. Even the #{gender} of #{place2} were #{emo} by #{char}'s prowess. There, #{char} met #{cr} and they became #{ms} with #{num} #{obj}s until they passed in #{year}.
+    puts "Once upon a #{noun1}, there was a #{adj1} and #{adj2} #{noun2} named #{char}. All across #{place1}, #{char} #{verb1} with great renown. \nEven the #{gender} of #{place2} would #{verb2} for a chance at #{char}'s fame and fortune. There, #{char} met #{cr} and they became #{ms} with #{num} #{obj}s until they passed in #{year}.
 Their legend will forever be #{adj3}."
   else
     puts "Ok. Maybe another time."
